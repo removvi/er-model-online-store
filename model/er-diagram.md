@@ -45,7 +45,7 @@ erDiagram
 
     USER ||--o{ ORDER : places
     CATEGORY ||--o{ PRODUCT : contains
-    ORDER ||--o{ ORDER_ITEM : includes
+    ORDER ||--|{ ORDER_ITEM : includes
     PRODUCT ||--o{ ORDER_ITEM : appears_in
     ORDER ||--o{ PAYMENT : has
 ```
