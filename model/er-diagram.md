@@ -6,7 +6,7 @@ erDiagram
     USER {
         int id PK
         string name
-        string email
+        string email UK "required"
     }
 
     CATEGORY {
