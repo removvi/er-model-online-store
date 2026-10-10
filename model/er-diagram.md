@@ -38,7 +38,7 @@ erDiagram
 
     PAYMENT {
         int id PK
-        int order_id FK
+        int order_id FK,UK
         decimal amount
         string status
     }
@@ -47,5 +47,6 @@ erDiagram
     CATEGORY ||--o{ PRODUCT : contains
     ORDER ||--|{ ORDER_ITEM : includes
     PRODUCT ||--o{ ORDER_ITEM : appears_in
-    ORDER ||--o{ PAYMENT : has
+    ORDER ||--o| PAYMENT : has
+
 ```
